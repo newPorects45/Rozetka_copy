@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozetka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ////////шапка////////////////// -->
+<header>
+    <div class="navBtn">
+        <button>&#9776;</button>
+    </div>
+    <div class="input-search">
+        <input type="text" placeholder="Я шукаю...">
+        <button class="btnRemoveText" id="removeText">Видалити</button>
+    </div>
+    <div class="koshykToOrder">
+        <button id="btnKoshyk"><img src="./images/4017513 – копія.png" alt=""></button>
+        <p id="num" class="num">0</p>
+        
+    </div>
+</header>
+<!-- /////////////////Products////////////////////////////// -->
+<main class="products">
+    <div class="product">
+        <img src="./images/524610684.webp" alt="ручки">
+        <h2>Ручки</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/324981627 – копія.webp" alt="олівці">
+        <h2>Олівці</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/481915730 – копія.webp" alt="пинал">
+        <h2>Пинал</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/518835442.webp" alt="рюкзак">
+        <h2>Рюкзак</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/496960003 – копія.webp" alt="фломастери">
+        <h2>Фломастери</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/422976589 – копія.webp" alt="стирачка">
+        <h2>Стирачки</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/364935667 – копія.webp" alt="підстругачка">
+        <h2>Підстругачки</h2>
+        <button>Додати</button>
+    </div>
+    <div class="product">
+        <img src="./images/12019784 – копія.webp" alt="лінійка">
+        <h2>Лінйки</h2>
+        <button>Додати</button>
+    </div>
+</main>
+<!-- //////////////////////////навігаційне поле///////////////////////////////// -->
+ <div class="background-nav" >
+    <nav class="navigation">
+        <div class="headNav">
+            <div class="logo">
+                <img src="./images/99031323856777.png" alt="">
+                <h2>rozetka</h2>
+            </div>
+            <button id="closed" class="closed">✖</button>
+        </div> 
+            <div class="katalog">
+                <button id="log">Увійти</button>
+            </div>
+            <div class="line"></div>
+            <div class="info">
+                <p>Довідковий центр</p>
+            </div>
+            <div class="line"></div>
+            <div class="list">
+                <a href="">Кошик</a>
+                <a href="">Спиский порівнянь</a>
+                <a href="">Магазин Rozetka</a>
+            </div>
+            <div class="line"></div>
+            <div class="info-about">
+                <h3>Інформація про компанію</h3>
+                <a href="">Про нас </a>
+                <a href="">Умови використання сайту</a>
+                <a href="">Вакансії</a>
+                <a href="">Контакти</a>
+                <a href="">Всі категорії</a>
+            </div>
+            <div class="line"></div>
+            <div class="help">
+                <h3>Допомога</h3>
+                <a href="">Доставка та оплата</a>
+                <a href="">Кредит</a>
+                <a href="">Гарантія</a>
+                <a href="">Повернення товару</a>
+                <a href="">Сервісні центри</a>
+            </div>
+    </nav>
+ </div>
+ <!-- ...................Поле реєстрації.......................... -->
+ <div class="logIN">
+    <div class="block-logIn">
+        <div class="inputsLog">
+            <button class="closed-reest">✖</button>
+            <h3>Заповніть поля нижче</h3>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" id="textName">
+                <input type="email" placeholder="email" id="textEmail">
+                <input type="password" placeholder="password" id="textPass">
+                <button id="btn-reest">Зареєстрватися</button>
+            </form>
+        </div>
+    </div>
+ </div>
+ <!-- //////////////////вікно кошика/////////////////////////// -->
+<div class="backgroundKoshyk" style="display: none;">
+    <div class="koshyk">
+        <div>
+            <div class="navKoshyk">
+                  <h2>кошик</h2>
+                  <button id="closedKoshyk">✖</button>
+            </div>
+            <div id="productsIn">
+                <ul id="apppenProducts"></ul>
+            </div>
+            <div class="btnRemoveProducts">
+                <button>Очистити</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ///////////////Footer////////////////////// -->
+<footer>
+    <div class="contacts">
+        <h2>Contacts</h2>
+        <p>+380 00 000 00</p>
+        <p>+380 00 000 00</p>
+    </div>
+    <div class="about">
+        <h2>Aboout us</h2>
+        <p>ROZETKA − найбільший онлайн-ритейлер у країні. З 2005 року ми втілюємо маленькі мрії та грандіозні плани мільйонів
+        людей. У нас можна знайти буквально все. Ми продаємо за справедливою ціною та надаємо гарантію, бо вважаємо, що
+        онлайн-шопінг має бути максимально зручним і безпечним. І щоразу, коли хтось натискає «Купити», ми розуміємо, що робимо
+        потрібну справу.</p>
+    </div>
+    <div class="our-message">
+        <h2>Наші соцмережі</h2>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+    </div>
+    <div class="blockImages">
+        <img src="./images/12019784 – копія.webp" alt="" id="images" class="images">
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
